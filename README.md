@@ -50,3 +50,7 @@ node IsometricAnimation/skills/isometric-animation/scripts/validate.mjs public/i
 ## Credits
 
 Built with the IsometricAnimation skill by Drishtant Kaushal, which adapts work by Tolga Cohce (ai-iso-skill) and Lucas Marques (Hairline). Their MIT notices are in `public/README.md`. The interface styling follows the look of HeroUI's default theme, written as plain CSS.
+
+## License
+
+The game is released under the MIT License; see `LICENSE`. The bundled drawing runtime keeps its own MIT notices in `public/README.md`.
