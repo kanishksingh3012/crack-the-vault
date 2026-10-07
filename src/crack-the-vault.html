@@ -45,9 +45,10 @@
   #route::before { content:""; position:absolute; left:3%; right:3%; top:50%; border-top:1px dashed var(--edge); }
   .chip { position:relative; width:100%; max-width:44px; aspect-ratio:1; border-radius:50%; border:2px solid transparent; background:var(--flat); color:var(--ink); font:500 13px var(--sans); padding:0; cursor:pointer; transition:transform .1s, border-color .15s; }
   .chip:hover { border-color:var(--edge); }
-  .chip.open { background:var(--panel); border-color:var(--ink-hi); color:var(--ink-hi); }
+  .chip.open { background:var(--panel); border:1px solid color-mix(in srgb,var(--ink) 45%,transparent); color:var(--ink-hi); }
   .chip.done { background:var(--am); color:#000; }
-  .chip[aria-current="true"] { outline:2px solid var(--focus); outline-offset:2px; }
+  .chip[aria-current="true"] { border:1px solid var(--am); background:color-mix(in srgb,var(--am) 14%,var(--panel)); color:var(--am-ink); box-shadow:0 0 0 4px color-mix(in srgb,var(--am) 16%,transparent); }
+  .chip.done[aria-current="true"] { background:var(--am); color:#000; }
   #levels { display:grid; grid-template-columns:repeat(auto-fill,minmax(190px,1fr)); gap:12px; }
   .card { display:grid; gap:6px; text-align:left; font:inherit; color:inherit; border:0; padding:10px 14px 14px; cursor:pointer; transition:transform .15s; }
   .card:hover { transform:translateY(-2px); }
